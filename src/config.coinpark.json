@@ -1,0 +1,50 @@
+{
+  "coinpark": {
+    "name": "coinpark",
+    "username": "",
+    "password": "",
+    "script":"./src/core/script/coinpark.default.js",
+    "symbolOption": {
+      "bixusdt": "BIX/USDT",
+      "btcusdt": "BTC/USDT",
+      "ethusdt": "ETH/USDT",
+      "etcusdt": "ETC/USDT",
+      "bchusdt": "BCH/USDT",
+      "ltcusdt": "LTC/USDT",
+      "bixeth": "BIX/ETH",
+      "etceth": "ETC/ETH",
+      "bcheth": "BCH/ETH",
+      "ltceth": "LTC/ETH",
+      "bixbtc": "BIX/BTC",
+      "ethbtc": "ETH/BTC",
+      "etcbtc": "ETC/BTC",
+      "bchbtc": "BCH/BTC",
+      "ltcbtc": "LTC/BTC"
+    },
+    "symbolAddr": {
+      "bixusdt": "https://www.coinpark.cc/fullExchange?coinPair=BIX_USDT",
+      "btcusdt": "https://www.coinpark.cc/fullExchange?coinPair=BTC_USDT",
+      "ethusdt": "https://www.coinpark.cc/fullExchange?coinPair=ETH_USDT",
+      "etcusdt": "https://www.coinpark.cc/fullExchange?coinPair=ETC_USDT",
+      "bchusdt": "https://www.coinpark.cc/fullExchange?coinPair=BCH_USDT",
+      "ltcusdt": "https://www.coinpark.cc/fullExchange?coinPair=LTC_USDT",
+      "bixeth": "https://www.coinpark.cc/fullExchange?coinPair=BIX_ETH",
+      "etceth": "https://www.coinpark.cc/fullExchange?coinPair=ETC_UTH",
+      "bcheth": "https://www.coinpark.cc/fullExchange?coinPair=BCH_UTH",
+      "ltceth": "https://www.coinpark.cc/fullExchange?coinPair=LTC_UTH",
+      "bixbtc": "https://www.coinpark.cc/fullExchange?coinPair=BIX_UTC",
+      "ethbtc": "https://www.coinpark.cc/fullExchange?coinPair=ETH_UTC",
+      "etcbtc": "https://www.coinpark.cc/fullExchange?coinPair=ETC_UTC",
+      "bchbtc": "https://www.coinpark.cc/fullExchange?coinPair=BCH_UTC",
+      "ltcbtc": "https://www.coinpark.cc/fullExchange?coinPair=LTC_UTC"
+    }
+  },
+  "register": {
+    "user": "CCATer",
+    "email": "ccater@ccater.com",
+    "phone": "010-66-xxxx-xxxx",
+    "pwd": "",
+    "series": "",
+    "regCode": ""
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>WebMiner Toolkit - 主 页</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="body"></div>
+  <div class="grad"></div>
+  <div class="banner">
+    <div>WebMiner<span> Toolkit</span> -
+      <spbn> ABCC Web 专用版</spbn>
+    </div>
+  </div>
+  <br>
+  <div class="indexInfo">
+    <div>LOGS <span> 信 息</span></div>
+    <div type="text" placeholder="Log 信息会输出在这里..." readonly="readonly" name="logInfo"></div><br>
+  </div>
+  <br>
+  <div class="indexFuc">
+    <div>SETTINGS <span> 设 置</span></div><br>
+    <br>
+    <div>选择交易所<span>（*必选项)</span></div>
+    <select name="bourse" onClick="updateIndex()" >
+        <option value="0" selected>...</option>
+        <option value="1">ABCC交易所</option>
+    </select>
+    <br>
+    <div>选择交易对<span>（*必选项)</span></div>
+    <select name="symbols">
+        <option value="0" selected>...</option>
+    </select>
+    <br>
+    <div>选择交易价格<span>（*必选项)</span></div>
+    <select name="runPrice">
+        <option value="0" selected>...</option>
+        <option value="1">现价买卖</option>
+        <option value="2">买一卖一价</option>
+    </select>
+    <br>
+    <div>输入交易数量<span>（*必选项)</span></div>
+    <input type="text" placeholder="默认1, 建议总资产25%" name="runNum"><br>
+    <div>选择交易间隔<span>（*必选项)</span></div>
+    <select name="runEpoch">
+        <option value="0">...</option>
+        <option value="1">2秒</option>
+        <option value="2">5秒</option>
+        <option value="3">15秒</option>
+        <option value="4">30秒</option>
+        <option value="5">1分钟</option>
+    </select>
+    <input type="button" value="重  置" onclick="resetIndex()"><br>
+    <input type="button" value="运  行" onclick="runIndex()"><br>
+    <input type="button" value="停  止" onclick="stopIndex()"><br>
+    <input type="text" name="check" disabled="disabled">
+  </div>
+
+  <script defer src="./js/renderer.js"></script>
+
+</body>
+
+</html>

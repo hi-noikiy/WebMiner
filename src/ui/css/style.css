@@ -1,0 +1,456 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.body {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-image: url(../img/city-skyline-wallpapers-008.jpg);
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.grad {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+  /* Chrome,Safari4+ */
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.banner {
+  position: absolute;
+  top: calc(5%);
+  left: calc(5%);
+  z-index: 2;
+}
+
+.banner div {
+  float: left;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.banner div span {
+  color: #5379fa !important;
+}
+
+.banner div spbn {
+  font-size: 30px;
+}
+
+.header {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 360px);
+  z-index: 2;
+}
+
+.header div {
+  float: left;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.header div span {
+  color: #5379fa !important;
+}
+
+.login {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 50px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.login input[type=text] {
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.login input[name=check] {
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.login input[type=password] {
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.login input[type=button] {
+  width: 260px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.login input[type=button]:hover {
+  opacity: 0.8;
+}
+
+.login input[type=button]:active {
+  opacity: 0.6;
+}
+
+.login input[type=text]:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.login input[type=password]:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.login input[type=button]:focus {
+  outline: none;
+}
+
+.signup {
+  position: absolute;
+  top: calc(50% - 300px);
+  left: calc(50% - 50px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.signup div {
+  width: 200px;
+  height: 30px;
+  float: left;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.signup div span {
+  color: #5379fa !important;
+}
+
+.signup input[type=text] {
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.signup input[name=pwdrCheck] {
+  width: 50px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.signup input[name=regCodeCheck] {
+  width: 50px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.signup textarea[name=series] {
+  width: 250px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+.signup textarea[name=regCode] {
+  width: 250px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+.signup input[type=password] {
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.signup input[type=button] {
+  width: 260px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.signup input[type=button]:hover {
+  opacity: 0.8;
+}
+
+.signup input[type=button]:active {
+  opacity: 0.6;
+}
+
+.signup input[type=text]:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.signup input[type=password]:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.signup input[type=button]:focus {
+  outline: none;
+}
+
+.indexInfo {
+  position: absolute;
+  top: calc(5% + 60px);
+  left: calc(5% - 20px);
+  height: calc(100%);
+  width: calc(65%);
+  padding: 10px;
+  z-index: 2;
+}
+
+.indexInfo div {
+  width: 300px;
+  height: 30px;
+  float: center;
+  color: #08f;
+  font-family: 'Exo', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.indexInfo div span {
+  color: #5379fa !important;
+}
+
+.indexInfo div[name=logInfo] {
+  width: calc(100% - 60px);
+  height: calc(100% - 200px);
+  background: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px;
+  margin-top: 10px;
+  overflow: auto;
+	white-space: pre;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+.indexInfo div[name=logInfo]:empty:before {
+  content: attr(placeholder);
+  color: #aaa;
+}
+
+.indexFuc {
+  position: absolute;
+  top: calc(5% + 60px);
+  left: calc(70% - 20px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.indexFuc div {
+  width: 200px;
+  height: 20px;
+  float: left;
+  color: #08f;
+  font-family: 'Exo', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.indexFuc div span {
+  color: #5379fa !important;
+}
+
+.indexFuc select {
+  width: 200px;
+  height: 40px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #000;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.indexFuc input[type=button] {
+  width: 200px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #000;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.indexFuc input[name=runNum] {
+  width: 200px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #000;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.indexFuc input[name=check] {
+  width: 200px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #000;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+::-webkit-scrollbar {
+  display: none
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}

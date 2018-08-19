@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>WebMiner Toolkit - 注 册</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="body"></div>
+  <div class="grad"></div>
+  <div class="header">
+    <div>WebMiner<span> Toolkit</span></div>
+  </div>
+  <br>
+  <div class="signup">
+    <div>用户名<span> (*必填)</span></div>
+    <input type="text" placeholder="username" name="user" onblur="
+        updateSeries()"><br>
+    <div>邮 箱</div>
+    <input type="text" placeholder="email address" name="email"><br>
+    <div>手 机</div>
+    <input type="text" placeholder="phone number" name="phone"><br>
+    <div>密 码<span> (*必填)</span></div>
+    <input type="password" placeholder="password" name="pwd"><br>
+    <div>确认密码<span> (*必填)</span></div><input type="text" name="pwdrCheck" disabled="disabled"><br>
+    <input type="password" placeholder="password" name="pwdr" onblur="pwdrVerify()"><br>
+    <div>序列号<span> (*必填)</span></div>
+    <textarea type="text" placeholder="serises is automatic generation" readonly="readonly" name="series"></textarea><br>
+    <div>激活码<span> (*必填)</span></div><input type="text" name="regCodeCheck" disabled="disabled"><br>
+    <textarea type="text" placeholder="put your registry code here" name="regCode"></textarea><br>
+    <input type="button" value="注 册" onclick="signup()">
+  </div>
+
+  <script defer src="./js/renderer.js"></script>
+
+</body>
+
+</html>

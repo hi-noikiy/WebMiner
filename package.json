@@ -1,0 +1,55 @@
+{
+  "name": "WebMiner",
+  "version": "0.0.0",
+  "description": "OpenInfoGraphic implemetation of Crypto Currency Web Miner",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron . --debug",
+    "start-core": "node src/core/index.js",
+    "lint": "",
+    "test": "",
+    "build": "",
+    "docs": "",
+    "release": "",
+    "coverage": "",
+    "package": "rimraf out && cross-env NODE_ENV=production && electron-packager ./ CCAT --platform=win32 --arch=x64 --win32metadata.FileDescription='' --overwrite --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=out --no-prune --electron-version=2.0.3 --out=out --icon=src/ui/img/CCAT.ico --asar"
+  },
+  "pre-push": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenInfoGraphic/WebMiner.git"
+  },
+  "keywords": [
+    "coinpark",
+    "ccat",
+    "webminer"
+  ],
+  "devDependencies": {
+    "electron": "^2.0.3",
+    "electron-packager": "^12.1.0",
+    "rimraf": "^2.6.2",
+    "cross-env": "^5.2.0",
+    "pre-push": "~0.1.1"
+  },
+  "dependencies": {
+    "puppeteer": "^1.5.0",
+    "getmac": "^1.4.3",
+    "re-require-module": "^1.0.2",
+    "mathjs": "^5.0.0"
+  },
+  "author": {
+    "name": "Paul Zhang",
+    "email": "paulplayergg@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OpenInfoGraphic/WebMiner/issues"
+  },
+  "homepage": "https://github.com/OpenInfoGraphic/WebMiner#readme",
+  "contributors": [
+    "paulplayer <paulplayergg@gmail.com>"
+  ]
+}
