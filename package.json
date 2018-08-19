@@ -1,0 +1,58 @@
+{
+  "name": "WebMiner",
+  "version": "0.4.3",
+  "description": "Crypto Currency Web Miner",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "debug": "electron . --devtools",
+    "lint": "",
+    "test": "",
+    "docs": "",
+    "release": "",
+    "coverage": "",
+    "package:win32": "rimraf out && cross-env NODE_ENV=production && electron-packager ./ WebMiner --platform=win32 --arch=ia32 --app-version=0.4.3 --win32metadata.FileDescription='' --overwrite --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=out  --ignore=chrome-win64 --ignore=src/cli --no-prune --electron-version=2.0.4 --out=out --icon=src/ui/img/favicon.ico",
+    "package:win64": "rimraf out && cross-env NODE_ENV=production && electron-packager ./ WebMiner --platform=win32 --arch=x64 --app-version=0.4.3  --win32metadata.FileDescription='' --overwrite --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=out  --ignore=chrome-win32 --ignore=src/cli  --no-prune --electron-version=2.0.4 --out=out --icon=src/ui/img/favicon.ico",
+    "package:mac": "rimraf out && cross-env NODE_ENV=production && electron-packager ./ WebMiner --platform=darwin --arch=x64 --app-version=0.4.3  --win32metadata.FileDescription='' --overwrite --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=out  --ignore=chrome-win32 --ignore=chrome-win64 --ignore=src/cli  --no-prune --electron-version=2.0.4 --out=out --icon=src/ui/img/favicon.ico"
+  },
+  "pre-push": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/#/WebMiner.git"
+  },
+  "keywords": [
+    "abcc",
+    "ccat",
+    "webminer"
+  ],
+  "devDependencies": {
+    "electron": "^2.0.4",
+    "electron-packager": "^12.1.0",
+    "rimraf": "^2.6.2",
+    "cross-env": "^5.2.0",
+    "pre-push": "~0.1.1"
+  },
+  "dependencies": {
+    "puppeteer": "^1.5.0",
+    "getmac": "^1.4.3",
+    "re-require-module": "^1.0.2",
+    "mathjs": "^5.0.0",
+    "debug": "^3.1.0",
+    "q": "^1.5.1"
+  },
+  "author": {
+    "name": "WebMiner",
+    "email": "#"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/#/WebMiner/issues"
+  },
+  "homepage": "https://github.com/#/WebMiner#readme",
+  "contributors": [
+    "WebMiner <#>"
+  ]
+}

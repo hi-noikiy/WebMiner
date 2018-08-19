@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>WebMiner Toolkit - 主 页</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="body"></div>
+  <div class="grad"></div>
+  <div class="banner">
+    <div>WebMiner<span> Toolkit</span> -
+      <spbn> ABCC Web 专用版</spbn>
+    </div>
+  </div>
+  <br>
+  <div class="indexInfo">
+    <div>LOGS <span> 信 息</span></div>
+    <div type="text" placeholder="Log 信息会输出在这里..." readonly="readonly" name="logInfo"></div><br>
+  </div>
+  <br>
+  <div class="indexFuc">
+    <div>SETTINGS <span> 设 置</span></div><br>
+    <br>
+    <div>选择交易所<span>（*必选项)</span></div>
+    <select name="bourse" onClick="rd.updateIndex()" >
+        <option value="0" selected>...</option>
+        <option value="1">ABCC交易所</option>
+    </select>
+    <br>
+    <div>选择交易对<span>（*必选项)</span></div>
+    <select name="symbols">
+        <option value="0" selected>...</option>
+    </select>
+    <br>
+    <div>选择交易价格<span>（*必选项)</span></div>
+    <select name="runPrice">
+        <option value="0" selected>...</option>
+        <option value="2">限价买卖(当前价格)</option>
+        <option value="1">市价买卖</option>
+        <option value="3">限价买卖(买一卖一价)</option>
+        <option value="4">限价买卖(买二卖二价)</option>
+    </select>
+    <br>
+    <div>输入交易数量<span>（*必选项)</span></div>
+    <input type="text" placeholder="建议设为总量的25%左右" name="runNum"><br>
+    <div>选择交易频率<span>（*必选项)</span></div>
+    <select name="runEpoch">
+        <option value="0">...</option>
+        <option value="2">2秒一单</option>
+        <option value="3">3秒一单</option>
+        <option value="4">4秒一单</option>
+        <option value="5">5秒一单</option>
+        <option value="6">6秒一单</option>
+        <option value="7">7秒一单</option>
+        <option value="8">8秒一单</option>
+        <option value="9">9秒一单</option>
+        <option value="10">10秒一单</option>
+        <option value="20">20秒一单</option>
+        <option value="30">30秒一单</option>
+        <option value="40">40秒一单</option>
+        <option value="50">50秒一单</option>
+        <option value="60">1分钟一单</option>
+        <option value="120">2分钟一单</option>
+        <option value="180">3分钟一单</option>
+        <option value="240">4分钟一单</option>
+        <option value="300">5分钟一单</option>
+    </select>
+    <input type="button" value="重  置" name ="reset" onclick="rd.resetIndex()"><br>
+    <input type="button" value="运  行" name ="run" onclick="rd.runIndex()"><br>
+    <input type="button" value="暂  停" name ="stop" onclick="rd.stopIndex()"><br>
+    <input type="text" name="check" disabled="disabled">
+  </div>
+
+  <script> var rd = require('./js/renderer.js')</script>
+
+</body>
+
+</html>

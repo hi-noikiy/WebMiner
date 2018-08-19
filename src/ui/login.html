@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>WebMiner Toolkit - 登 录</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="body"></div>
+  <div class="grad"></div>
+  <div class="header">
+    <div>WebMiner<span> Toolkit</span></div>
+  </div>
+  <br>
+  <div class="login">
+    <input type="text" placeholder="username" name="user"><br>
+    <input type="password" placeholder="password" name="pwd"><br>
+    <input type="button" value="登 录" onclick="rd.login()"><br>
+    <input type="button" value="注 册" onclick="rd.getSignup()"><br>
+    <input type="text" name="check" disabled="disabled">
+  </div>
+
+  <script> var rd = require('./js/renderer.js')</script>
+
+</body>
+
+</html>
